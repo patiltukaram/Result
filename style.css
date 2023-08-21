@@ -1,0 +1,152 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=PT+Serif&display=swap');
+*{
+    box-sizing: content-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', serif;
+    font-family: 'PT Serif', serif;
+    line-height: 1.5;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.result_container{
+   color: white;
+   background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+}
+
+.result {
+    text-align: center;
+}
+
+.result span{
+    font-size: 3rem;
+}
+.result p{
+    text-align: center;
+    display: inline-block;
+    background-color:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    padding: 2rem 3.5rem;
+    border-radius: 600px;
+    margin: 2rem 0;
+    font-weight: 900;
+}
+.result_container .summary_container{
+    padding: 1.5rem;
+}
+.result_container h3, p{
+    text-align: center;
+}
+.message_container{
+    max-width: 90%;
+    margin: auto;
+}
+.message_container h3{
+    font-size: 1.2rem;
+}
+.category, .category div{
+    display: flex;
+    align-items: center;
+}
+.category div{
+    gap: 10px;
+}
+.category{
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+.category span, .message, .result_container h3{
+    color: rgb(197, 197, 197);
+}
+.Reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);;
+}
+
+.Memory{
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.Verbal{
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.Visual{
+    background-color: hsl(234, 85%, 45%, 0.1);   
+}
+
+.Reaction h4{
+    color: hsl(0, 100%, 67%, 0.9);
+}
+
+.Memory h4{
+    color: hsl(39, 100%, 56%, 0.9) ;
+}
+
+.Verbal{
+    color: hsl(166, 100%, 37%, 0.9);
+}
+
+.Visual{
+    color:hsl(234, 85%, 45%, 0.9) ;
+}
+
+.btn{
+   margin-top: 1rem;
+   display: inline-block;
+   width: 100%;
+   padding: 0.8rem;
+   border-radius: 30px;
+   border: none;
+   background-color: hsl(224, 30%, 27%); 
+   text-align: center;
+   text-decoration: none;
+   color: white;
+}
+
+.btn:hover{
+    background-color: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+
+.attribution {
+     font-size: 11px;
+      text-align: center;
+ }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+    @media screen and (min-width:31.25em) {
+        body{
+            margin: auto;
+            max-width: 43.75em;
+        }
+
+        main{
+            margin: 0.8rem;
+        }
+
+        .container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          box-shadow: 10px 10px 20px hsl(221, 100%, 96%);
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 20px;
+        }
+
+        .result_container{
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+    }
